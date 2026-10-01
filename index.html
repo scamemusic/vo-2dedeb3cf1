@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Ответы VNK на YouTube</title>
+<style>
+  :root {
+    --fon: #f6f6f3; --kartochka: #ffffff; --tekst: #1b1b19; --tusk: #6a6a64; --linia: #e2e2dc;
+    --akcent: #1f6feb; --akcent-tekst: #ffffff; --otvet-fon: #f0f5ff;
+    --slom: #b3261e; --slom-fon: #fdecea; --ishch: #1a6b3c; --ishch-fon: #e7f5ec; --nezah: #7a5a00; --nezah-fon: #fbf3dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fon: #151514; --kartochka: #1e1e1c; --tekst: #ecece7; --tusk: #9b9b94; --linia: #2f2f2c;
+      --akcent: #6aa6ff; --akcent-tekst: #0b1220; --otvet-fon: #1a2333;
+      --slom: #ff8a80; --slom-fon: #3a1c1a; --ishch: #7fd6a0; --ishch-fon: #16301f; --nezah: #f0c65a; --nezah-fon: #332a12;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fon: #151514; --kartochka: #1e1e1c; --tekst: #ecece7; --tusk: #9b9b94; --linia: #2f2f2c;
+    --akcent: #6aa6ff; --akcent-tekst: #0b1220; --otvet-fon: #1a2333;
+    --slom: #ff8a80; --slom-fon: #3a1c1a; --ishch: #7fd6a0; --ishch-fon: #16301f; --nezah: #f0c65a; --nezah-fon: #332a12;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fon); color: var(--tekst); font: 16px/1.5 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 780px; margin: 0 auto; padding: 0 16px 64px; }
+  header { padding: 28px 0 8px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  .pod { color: var(--tusk); margin: 0; }
+  .panel { position: sticky; top: 0; z-index: 2; background: var(--fon); padding: 12px 0; border-bottom: 1px solid var(--linia);
+           display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .polosa { flex: 1 1 200px; height: 8px; background: var(--linia); border-radius: 99px; overflow: hidden; }
+  .polosa div { height: 100%; width: 0; background: var(--akcent); transition: width .2s; }
+  .panel b { white-space: nowrap; }
+  .panel label { color: var(--tusk); font-size: 14px; white-space: nowrap; cursor: pointer; }
+  details { background: var(--kartochka); border: 1px solid var(--linia); border-radius: 12px; padding: 12px 16px; margin: 16px 0 8px; }
+  summary { font-weight: 600; cursor: pointer; }
+  details ol { margin: 10px 0 2px; padding-left: 20px; }
+  details li { margin-bottom: 6px; }
+  h2 { font-size: 20px; margin: 32px 0 2px; }
+  .schet { color: var(--tusk); font-weight: 400; }
+  .pochemu { color: var(--tusk); margin: 0 0 12px; font-size: 15px; }
+  .k { background: var(--kartochka); border: 1px solid var(--linia); border-radius: 12px; padding: 14px 16px; margin-bottom: 12px; transition: opacity .2s; }
+  .k.gotovo { opacity: .45; }
+  body.skryt .k.gotovo { display: none; }
+  .shapka { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+  .metka { font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 99px; }
+  .metka.slom { color: var(--slom); background: var(--slom-fon); }
+  .metka.ishch { color: var(--ishch); background: var(--ishch-fon); }
+  .metka.nezah { color: var(--nezah); background: var(--nezah-fon); }
+  .kto { color: var(--tusk); font-size: 14px; overflow-wrap: anywhere; }
+  blockquote { margin: 0 0 6px; padding-left: 12px; border-left: 3px solid var(--linia); overflow-wrap: anywhere; }
+  .rolik { color: var(--tusk); font-size: 13px; margin-bottom: 8px; overflow-wrap: anywhere; }
+  .otkryt { display: inline-block; color: var(--akcent); font-weight: 600; text-decoration: none; margin-bottom: 10px; }
+  .otvet { background: var(--otvet-fon); border-radius: 10px; padding: 10px 12px; }
+  .podpis { font-size: 12px; font-weight: 600; color: var(--tusk); text-transform: uppercase; letter-spacing: .04em; }
+  .tekst-otveta { margin: 4px 0 10px; overflow-wrap: anywhere; }
+  .deystviya { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+  button { font: inherit; font-weight: 600; border: 0; border-radius: 8px; padding: 8px 14px; background: var(--akcent); color: var(--akcent-tekst); cursor: pointer; }
+  .otvetil { cursor: pointer; }
+  .otvetil input { width: 18px; height: 18px; vertical-align: -3px; margin-right: 4px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Ответы VNK на YouTube</h1>
+    <p class="pod">12 человек из комментариев под роликами про VPN. Каждому написан свой ответ. Собрано 01.10.2026.</p>
+  </header>
+
+  <div class="panel">
+    <b id="schet">Отвечено 0 из 12</b>
+    <div class="polosa"><div id="polosa"></div></div>
+    <label><input type="checkbox" id="skryt"> Скрыть отвеченных</label>
+  </div>
+
+  <details open>
+    <summary>Как отвечать</summary>
+    <ol>
+      <li><b>Со своего канала.</b> Ответы написаны от первого лица. Если YouTube начнёт прятать ответы, притормози на пару дней.</li>
+      <li><b>С компьютера.</b> Ссылка откроет ролик, а нужный комментарий будет первым, с пометкой «Выделенный комментарий». Жми «Ответить» под ним и вставляй текст. Приложение на телефоне часто открывает просто ролик.</li>
+      <li><b>Не больше 10–15 ответов в день, вразброс по времени.</b> Десятки ответов подряд — главный признак спама. Галочки «Ответил» запоминаются в этом браузере, можно продолжать завтра.</li>
+      <li><b>Ответы со ссылкой YouTube может задержать на проверку</b> у автора ролика. Через час открой ролик в режиме инкогнито: если ответа не видно, удали его и отправь тот же текст без ссылки.</li>
+      <li>Начинай сверху: первая группа — самая ценная, внутри групп сначала самые свежие.</li>
+    </ol>
+  </details>
+
+  
+  <section>
+    <h2>🔥 Ищут, какой VPN подключить <span class="schet">4</span></h2>
+    <p class="pochemu">Горячие: прямо спрашивают, какой VPN взять или сколько стоит. Отвечать первыми.</p>
+    
+    <article class="k" data-id="Ugx5nogxaWeZ9GxQadl4AaABAg">
+      <div class="shapka">
+        <span class="metka ishch">🔥 Ищут, какой VPN подключить</span>
+        <span class="kto">@sergeyserega5114 · написал 30.09</span>
+      </div>
+      <blockquote>Колбаса, пожалуста подари мне очень нужен впн</blockquote>
+      <div class="rolik">Под роликом: ЛУЧШИЙ VPN 2026 — РЕШИ ПРОБЛЕМУ РАЗ И НАВСЕГДА! Быстрый ВПН · $taTu$</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=y2SFbN3qp9I&amp;lc=Ugx5nogxaWeZ9GxQadl4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Ждать подарка можно долго 🙂 Я пользуюсь VNK VPN — там первые 3 дня бесплатно и без карты, так что начать можно прямо сейчас: t.me/vnk_lab_bot?start=ref_yt</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgzfeXWxXGIH9oSDmhV4AaABAg">
+      <div class="shapka">
+        <span class="metka ishch">🔥 Ищут, какой VPN подключить</span>
+        <span class="kto">@RomaMixRu · написал 30.09</span>
+      </div>
+      <blockquote>Чтобы подключить впн нужен впн, чтобы попасть в телеграм, чтобы оплатить впн.😂.</blockquote>
+      <div class="rolik">Под роликом: Какой ВПН скачать на айфон и андроид в 2026: показываю свой телефон на белых списках · Технарь обходит!</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=VjiDJ_wsOpA&amp;lc=UgzfeXWxXGIH9oSDmhV4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Замкнутый круг, да 😄 Разорвать его можно: я пользуюсь VNK VPN, там сайт открывается без VPN и без Telegram — регистрируешься, берёшь 3 дня бесплатно и оплачиваешь картой там же. vnklab.com/go/yt</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgyeqRaz4MELPBqnliB4AaABAg">
+      <div class="shapka">
+        <span class="metka ishch">🔥 Ищут, какой VPN подключить</span>
+        <span class="kto">@АндрейВебер-ю9л · написал 28.09</span>
+      </div>
+      <blockquote>Амнезия, не знаю как платный, по мне дороговато, а FREE один день отработал и сдох, бесконечное попытка подключения и ничего не помогает. У меня есть один хороший VPN на 1 устройство 150 руб. стоит на телефоне, но еще нужно на 2 ноута ( работа, дом), доровато получается. Да и хотелось бы другой до 200 руб минимум на 2 устройства, как резерв если тот ляжет. Неплохой из недорогого avoVPN но у него дурацкое приложение, ключи нужно брать на сайте, сайт бывает недоступен даже с VPN, благо еще есть бе</blockquote>
+      <div class="rolik">Под роликом: Новый РАЗРЫВНОЙ VPN👉 Как обойти ВСЕ блокировки на Андроид! Как восстановить Телеграм, Воцап, Ютуб · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=EYmyqkchG8k&amp;lc=UgyeqRaz4MELPBqnliB4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Под твой расклад: я пользуюсь VNK VPN, там телефон и два ноутбука — это тариф на 3 устройства, 309 ₽ в месяц, а если брать на год, выходит около 207 ₽ в месяц за все три. Пробный период — 3 дня на одном устройстве, чтобы сначала проверить. vnklab.com/go/yt</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgxTrFrgpzjc5wlCIXJ4AaABAg">
+      <div class="shapka">
+        <span class="metka ishch">🔥 Ищут, какой VPN подключить</span>
+        <span class="kto">@SergeBonua · написал 27.09</span>
+      </div>
+      <blockquote>Как запустить ютуб на андроид тв? Какой впн нужен?</blockquote>
+      <div class="rolik">Под роликом: Новый РАЗРЫВНОЙ VPN👉 Как обойти ВСЕ блокировки на Андроид! Как восстановить Телеграм, Воцап, Ютуб · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=EYmyqkchG8k&amp;lc=UgxTrFrgpzjc5wlCIXJ4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">На Android TV нужен VPN-клиент прямо на самом телевизоре. Я пользуюсь VNK VPN через приложение Happ — оно есть и для Android TV: добавляешь подписку и проверяешь, пошёл ли YouTube. Первые 3 дня бесплатно: t.me/vnk_lab_bot?start=ref_yt</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section>
+    <h2>Сломался чужой VPN <span class="schet">3</span></h2>
+    <p class="pochemu">VPN им уже нужен, многие за него платят, а свой подвёл.</p>
+    
+    <article class="k" data-id="UgwNKXmOnUNMcLsBBuV4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@victorrusowizc4143 · написал 01.10</span>
+      </div>
+      <blockquote>Не один впн не работает на ноутбуке...</blockquote>
+      <div class="rolik">Под роликом: 2026 ЛУЧШИЙ ВПН НА ПК / АНДРОЙД ИЛИ ЛЮБОЕ УСТРОЙСТВО | ЛУЧШИЙ ОБХОД БЕЛЫХ СПИСКОВ В РОССИИ 2026 · Теперь я Знаю</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=shB_Oh27LjU&amp;lc=UgwNKXmOnUNMcLsBBuV4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Если на ноутбуке не работает вообще ни один — сначала проверь дату и время в системе и антивирус: на Windows VPN чаще всего ломают именно они. Если дело не в этом — я пользуюсь VNK VPN на компьютере через Happ, первые 3 дня бесплатно, можно проверить как раз на ноутбуке.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="Ugy1K-rqVR2Bsx_Sh2t4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@vilogplay · написал 01.10</span>
+      </div>
+      <blockquote>Ну впн дурева работает по настроению. Сейчас нормально, а бывает,что он не работает ни как или очень плохо.</blockquote>
+      <div class="rolik">Под роликом: После выборов в России резко усилили блокировки VPN · Durev VPN</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=Y3s2tb273cw&amp;lc=Ugy1K-rqVR2Bsx_Sh2t4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">«По настроению» — обычно значит, что серверы перегружены или их периодически режут. Я пользуюсь VNK VPN — там в подписке несколько серверов, и если один шалит, можно переключиться на другой. 3 дня бесплатно, чтобы сравнить: t.me/vnk_lab_bot?start=ref_yt</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgxDcUZQXYlxF6ne4Kl4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@petuh19 · написал 28.09</span>
+      </div>
+      <blockquote>Випас самый худший, не покпайте его. За 899 рублей на 2 месяца обходит только телеграм и ютуб. Сегодня белые списки включили, и он перестал включатся. Я писал в тех поддержку, и мне сказали что &quot;возможно проблема работы ВПН как-то связан с МОИМ интернетом&quot;. Вау. Кароче даже денег не вернули</blockquote>
+      <div class="rolik">Под роликом: Сравнил ПОПУЛЯРНЫЕ ОБХОДЫ БЛОКИРОВОК - что реально работает и обходит БЕЛЫЕ СПИСКИ · CHIEFF </div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=Evs067qUN7c&amp;lc=UgxDcUZQXYlxF6ne4Kl4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Обидно за 899 ₽. Про белые списки скажу как есть: заранее тут никто ничего не знает, всё зависит от оператора и места. Поэтому я за сервисы с пробным периодом: пользуюсь VNK VPN, там 3 дня бесплатно — сначала проверяешь на своём интернете, потом решаешь, платить или нет.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section>
+    <h2>Не могут зайти <span class="schet">5</span></h2>
+    <p class="pochemu">Про VPN не спрашивают, поэтому ответ — подсказка, а не реклама.</p>
+    
+    <article class="k" data-id="UgwTjgH41FXC45xUiOJ4AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@BlueLock_Nagi-k8b · написал 01.10</span>
+      </div>
+      <blockquote>Оплатил ничего не работает</blockquote>
+      <div class="rolik">Под роликом: 2026 ЛУЧШИЙ ВПН НА ПК / АНДРОЙД ИЛИ ЛЮБОЕ УСТРОЙСТВО | ЛУЧШИЙ ОБХОД БЕЛЫХ СПИСКОВ В РОССИИ 2026 · Теперь я Знаю</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=shB_Oh27LjU&amp;lc=UgwTjgH41FXC45xUiOJ4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Неприятно, когда оплатил вслепую. На будущее — бери там, где сначала дают проверить. Я пользуюсь VNK VPN: первые 3 дня бесплатно и без карты, платишь, только если у тебя заработало. vnklab.com/go/yt</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgwS8IjkgmRT3yDHfSx4AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@h1dex · написал 30.09</span>
+      </div>
+      <blockquote>вся проблема в том что сайт амнезии не открывается даже с впн..а чтобы он открылся нужен рабочий впн типа амнезии)</blockquote>
+      <div class="rolik">Под роликом: Как сделать свой VPN за пару кликов · FINLAYER</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=IQjMxDlH9HA&amp;lc=UgwS8IjkgmRT3yDHfSx4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Знакомая ловушка: чтобы скачать VPN, нужен VPN. Я пользуюсь VNK VPN — там сайт открывается и без VPN, а подписка добавляется в приложение Happ. Первые 3 дня бесплатно: vnklab.com/go/yt</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgzJ_GIU5UTxWeQuyT54AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@АлександрВолков-о7ц · написал 30.09</span>
+      </div>
+      <blockquote>Буебуе сдулся давно))) стратегии вообще слабые подбирает! Ютуб почти не грузит с ним ! Лучше ВПН искать рабочий !!!</blockquote>
+      <div class="rolik">Под роликом: 🔥 ByeByeDPI 1.7.9 — НОВАЯ ВЕРСИЯ! Обход блокировок на Android TV и Android · Fixs and Tricks</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=IOCF3JFj80M&amp;lc=UgzJ_GIU5UTxWeQuyT54AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Согласен, стратегии всё чаще не вывозят. Я пользуюсь VNK VPN через Happ — без подбора стратегий и галочек, первые 3 дня бесплатно: t.me/vnk_lab_bot?start=ref_yt</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgzLYUhlMJWWtVjGsLp4AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@AkDoza · написал 29.09</span>
+      </div>
+      <blockquote>А что делать если не отправляются файлы и картинки через дискорд? Вечная загрузка висит и ничего не происходит</blockquote>
+      <div class="rolik">Под роликом: ОБХОД БЛОКИРОВКИ ДИСКОРДА НАВСЕГДА! НОВЫЙ ДИСКОРД ФИКС ! ДС ОБХОД С ГИТХАБ ! ДИСКОРД ОБХОД ! ЗАПРЕТ · HUMAS PUSAT IKS PI</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=YlXtJqEcxDI&amp;lc=UgzLYUhlMJWWtVjGsLp4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Вечная загрузка файлов в Discord — частая история с обходами вроде zapret: текст проходит, а файлы идут через другие адреса и режутся. С полноценным VPN такого разделения нет. Я пользуюсь VNK VPN, первые 3 дня бесплатно — проверь, уйдут ли файлы.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgwmEe-lNCsjZIOy6NB4AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@xxzxxuzxme · написал 29.09</span>
+      </div>
+      <blockquote>youtubeweb timeout в тестах на любом альте, что делать?</blockquote>
+      <div class="rolik">Под роликом: Как разблокировать YouTube и Discord в 2026 — Zapret для всех провайдеров · Dailyhardcore</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=ozLJNnsctio&amp;lc=UgwmEe-lNCsjZIOy6NB4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Если youtubeweb даёт timeout на любой стратегии, значит, провайдер режет так, что zapret уже не справляется — подбором это не лечится. Дальше помогает только полноценный VPN. Я пользуюсь VNK VPN, первые 3 дня бесплатно — проверишь YouTube у себя.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+  </section>
+</main>
+
+<script>
+  // Галочки хранятся только в этом браузере. Если хранилище недоступно
+  // (частный режим), страница просто работает без памяти.
+  const KLYUCH = "vnk-otvety-2026-09-27:";
+  const prochitat = (id) => { try { return localStorage.getItem(KLYUCH + id) === "1"; } catch { return false; } };
+  const zapisat = (id, da) => { try { da ? localStorage.setItem(KLYUCH + id, "1") : localStorage.removeItem(KLYUCH + id); } catch {} };
+
+  const kartochki = [...document.querySelectorAll(".k")];
+  const vsego = kartochki.length;
+
+  function obnovit() {
+    const gotovo = kartochki.filter((k) => k.classList.contains("gotovo")).length;
+    document.getElementById("schet").textContent = "Отвечено " + gotovo + " из " + vsego;
+    document.getElementById("polosa").style.width = (gotovo / vsego * 100) + "%";
+  }
+
+  for (const k of kartochki) {
+    const id = k.dataset.id;
+    const galochka = k.querySelector(".otvetil input");
+    galochka.checked = prochitat(id);
+    k.classList.toggle("gotovo", galochka.checked);
+    galochka.addEventListener("change", () => {
+      zapisat(id, galochka.checked);
+      k.classList.toggle("gotovo", galochka.checked);
+      obnovit();
+    });
+
+    const knopka = k.querySelector(".kopirovat");
+    const tekst = k.querySelector(".tekst-otveta").textContent;
+    knopka.addEventListener("click", async () => {
+      let vyshlo = false;
+      try { await navigator.clipboard.writeText(tekst); vyshlo = true; } catch {}
+      if (!vyshlo) {
+        // Запасной путь для браузеров, где буфер обмена закрыт.
+        const pole = document.createElement("textarea");
+        pole.value = tekst;
+        document.body.appendChild(pole);
+        pole.select();
+        try { vyshlo = document.execCommand("copy"); } catch {}
+        pole.remove();
+      }
+      knopka.textContent = vyshlo ? "Скопировано ✓" : "Выдели текст вручную";
+      setTimeout(() => { knopka.textContent = "Скопировать"; }, 1800);
+    });
+  }
+
+  const skryt = document.getElementById("skryt");
+  skryt.addEventListener("change", () => document.body.classList.toggle("skryt", skryt.checked));
+  obnovit();
+</script>
+</body>
+</html>
